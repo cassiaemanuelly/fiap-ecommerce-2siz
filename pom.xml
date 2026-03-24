@@ -12,7 +12,11 @@
 	<artifactId>api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api</name>
+<<<<<<< HEAD
 	<description>API REST Spring Boot de um E-commerce</description>
+=======
+	<description>API Rest Spring Boot E-Commerce</description>
+>>>>>>> ecca596878f6db7bdf7a3bdc3050edb379740301
 	<url/>
 	<licenses>
 		<license/>
@@ -32,6 +36,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
@@ -47,6 +52,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+=======
+>>>>>>> ecca596878f6db7bdf7a3bdc3050edb379740301
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
 
@@ -66,6 +73,7 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
@@ -76,6 +84,8 @@
 			<artifactId>spring-boot-starter-validation-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+=======
+>>>>>>> ecca596878f6db7bdf7a3bdc3050edb379740301
 	</dependencies>
 
 	<build>

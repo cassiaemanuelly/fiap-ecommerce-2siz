@@ -1,5 +1,6 @@
 package br.com.fiap.ecommerce.api.controller;
 
+<<<<<<< HEAD
 import br.com.fiap.ecommerce.api.categoria.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,5 +54,20 @@ public class CategoriaController {
 
         var categoria = categoriaRepository.getReferenceById(id);
         categoria.excluirCategoria();
+=======
+import br.com.fiap.ecommerce.api.categoria.DadosCadastroCategoria;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("categorias")
+public class CategoriaController {
+
+    @PostMapping
+    public void cadastrarCategoria(@RequestBody DadosCadastroCategoria dados) {
+        System.out.println(dados);
+>>>>>>> ecca596878f6db7bdf7a3bdc3050edb379740301
     }
 }
