@@ -49,6 +49,9 @@ public class CategoriaController {
     @DeleteMapping("/{id}")
     @Transactional
     public void deletarCategoria (@PathVariable Long id){
-        categoriaRepository.deleteById(id);
+       // categoriaRepository.deleteById(id);
+
+        var categoria = categoriaRepository.getReferenceById(id);
+        categoria.excluirCategoria();
     }
 }
