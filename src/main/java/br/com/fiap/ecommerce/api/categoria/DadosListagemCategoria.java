@@ -1,3 +1,5 @@
+package br.com.fiap.ecommerce.api.categoria;
+
 import br.com.fiap.ecommerce.api.categoria.Categoria;
 
 public record DadosListagemCategoria(Long id, String nome) {
