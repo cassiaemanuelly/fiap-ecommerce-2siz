@@ -1,6 +1,6 @@
 package br.com.fiap.ecommerce.api.controller;
 
-<<<<<<< HEAD
+<<<<<<<HEAD
 import br.com.fiap.ecommerce.api.categoria.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class CategoriaController {
     }
 
     @GetMapping("/{id}")
-    public DadosDetalhamentoCategoria buscarPorId(@PathVariable Long id){
+    public DadosDetalhamentoCategoria buscarPorId(@PathVariable Long id) {
         var categoria = categoriaRepository.getReferenceById(id);
         return new DadosDetalhamentoCategoria(categoria);
     }
@@ -41,7 +41,7 @@ public class CategoriaController {
     @PutMapping
     @Transactional
 
-    public void atualizarCategoria(@RequestBody @Valid DadosAtualizarCategoria dados){
+    public void atualizarCategoria(@RequestBody @Valid DadosAtualizarCategoria dados) {
         var categoria = categoriaRepository.getReferenceById(dados.id());
         categoria.atualizarCategoria(dados);
     }
@@ -49,25 +49,10 @@ public class CategoriaController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void deletarCategoria (@PathVariable Long id){
-       // categoriaRepository.deleteById(id);
+    public void deletarCategoria(@PathVariable Long id) {
+        // categoriaRepository.deleteById(id);
 
         var categoria = categoriaRepository.getReferenceById(id);
         categoria.excluirCategoria();
-=======
-import br.com.fiap.ecommerce.api.categoria.DadosCadastroCategoria;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("categorias")
-public class CategoriaController {
-
-    @PostMapping
-    public void cadastrarCategoria(@RequestBody DadosCadastroCategoria dados) {
-        System.out.println(dados);
->>>>>>> ecca596878f6db7bdf7a3bdc3050edb379740301
     }
 }
